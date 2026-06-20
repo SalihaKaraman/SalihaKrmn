@@ -28,16 +28,16 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <nav className="flex gap-8">
               <Link href="/hakkimda" className="text-slate-300 hover:text-white transition text-sm">
-                About
+                Hakkımda
               </Link>
               <Link href="/projeler" className="text-slate-300 hover:text-white transition text-sm">
-                Projects
+                Projeler
               </Link>
               <Link href="/hakkimda" className="text-slate-300 hover:text-white transition text-sm">
-                Skills
+                Yetenekler
               </Link>
               <Link href="/iletisim" className="text-slate-300 hover:text-white transition text-sm">
-                Contact
+                İletişim
               </Link>
             </nav>
             
@@ -46,13 +46,13 @@ export default function Header() {
                 href="/projeler"
                 className="px-4 py-2 text-slate-300 hover:text-white text-sm transition"
               >
-                View Projects
+                Projeleri Gör
               </a>
               <a
                 href="#"
                 className="px-4 py-2 bg-violet-500 hover:bg-violet-600 text-white text-sm rounded transition font-semibold"
               >
-                Download CV
+                CV İndir
               </a>
             </div>
           </div>
@@ -62,20 +62,20 @@ export default function Header() {
         {isOpen && (
           <nav className="md:hidden mt-4 space-y-3 pb-4">
             <Link href="/hakkimda" className="block text-slate-300 hover:text-white transition py-2">
-              About
+              Hakkımda
             </Link>
             <Link href="/projeler" className="block text-slate-300 hover:text-white transition py-2">
-              Projects
+              Projeler
             </Link>
             <Link href="/hakkimda" className="block text-slate-300 hover:text-white transition py-2">
-              Skills
+              Yetenekler
             </Link>
             <Link href="/iletisim" className="block text-slate-300 hover:text-white transition py-2">
-              Contact
+              İletişim
             </Link>
             <div className="flex gap-2 pt-4 border-t border-slate-700">
               <a href="/projeler" className="flex-1 px-4 py-2 text-slate-300 text-center text-sm rounded border border-slate-700">
-                View Projects
+                Projeleri Gör
               </a>
               <a href="#" className="flex-1 px-4 py-2 bg-violet-500 text-white text-center text-sm rounded font-semibold">
                 CV

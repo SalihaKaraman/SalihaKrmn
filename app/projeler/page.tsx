@@ -3,8 +3,8 @@ import ProjectCard from '../../components/ProjectCard'
 const projects = [
   {
     id: 1,
-    title: 'Flutter Mobile App',
-    description: 'High-performance mobile application built with Flutter framework and Firebase integration for real-time data synchronization.',
+    title: 'Flutter Mobil Uygulaması',
+    description: 'Flutter framework ile yapılandırılmış yüksek performanslı mobil uygulama ve gerçek zamanlı veri senkronizasyonu için Firebase entegrasyonu.',
     tags: ['Flutter', 'Dart', 'Firebase'],
     link: 'https://github.com/SalihaKaraman/SalihaKrmn',
     demo: '#',
@@ -13,7 +13,7 @@ const projects = [
   {
     id: 2,
     title: 'Web3 & Blockchain',
-    description: 'Exploring blockchain technology and Web 3.0 ecosystem with smart contract development and decentralized finance protocols.',
+    description: 'Blockchain teknolojisi ve Web 3.0 ekosistemini akıllı sözleşme geliştirme ve merkezi olmayan finans protokolleriyle keşfetme.',
     tags: ['Web3', 'Blockchain', 'Cryptocurrency'],
     link: 'https://github.com',
     demo: '#',
@@ -21,8 +21,8 @@ const projects = [
   },
   {
     id: 3,
-    title: 'AI Model Training',
-    description: 'Machine learning pipeline for training and deploying AI models with focus on ethical AI practices and data privacy.',
+    title: 'Yapay Zeka Model Eğitimi',
+    description: 'Etik yapay zeka uygulamaları ve veri gizliliğine odaklanarak yapay zeka modellerini eğitme ve dağıtma için makine öğrenmesi işlem hattı.',
     tags: ['Python', 'TensorFlow', 'Data Science'],
     link: 'https://github.com',
     demo: '#',
@@ -30,27 +30,27 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Cyber Security Analysis',
-    description: 'Security research and vulnerability analysis focusing on web application security and secure coding practices.',
-    tags: ['Security', 'Python', 'Testing'],
+    title: 'Siber Güvenlik Analizi',
+    description: 'Web uygulaması güvenliği ve güvenli kodlama uygulamalarına odaklanarak güvenlik araştırması ve zafiyet analizi.',
+    tags: ['Güvenlik', 'Python', 'Test'],
     link: 'https://github.com',
     demo: '#',
     image: '◆'
   },
   {
     id: 5,
-    title: 'Data Analytics Dashboard',
-    description: 'Interactive dashboard for analyzing complex datasets with SPSS integration and real-time visualizations.',
-    tags: ['SPSS', 'Excel', 'Data Analysis'],
+    title: 'Veri Analitik Panosu',
+    description: 'SPSS entegrasyonu ve gerçek zamanlı görselleştirmelerle karmaşık veri setlerini analiz etmek için interaktif pano.',
+    tags: ['SPSS', 'Excel', 'Veri Analizi'],
     link: 'https://github.com',
     demo: '#',
     image: '◆'
   },
   {
     id: 6,
-    title: 'EdTech Platform',
-    description: 'Educational technology platform built with Next.js for interactive learning using GeoGebra and Kahoot integrations.',
-    tags: ['Next.js', 'React', 'Education'],
+    title: 'EdTech Platformu',
+    description: 'GeoGebra ve Kahoot entegrasyonları kullanarak etkileşimli öğrenme için Next.js ile yapılandırılmış eğitim teknolojisi platformu.',
+    tags: ['Next.js', 'React', 'Eğitim'],
     link: 'https://github.com',
     demo: '#',
     image: '◆'
@@ -64,18 +64,18 @@ export default function Projeler() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-12">
-            <div className="text-xs text-violet-400 font-mono tracking-widest mb-4">PORTFOLIO ARCHIVE</div>
-            <h1 className="text-5xl font-bold text-white mb-4">Selected Works.</h1>
+            <div className="text-xs text-violet-400 font-mono tracking-widest mb-4">PORTFÖY ARŞİVİ</div>
+            <h1 className="text-5xl font-bold text-white mb-4">Seçili Çalışmalar.</h1>
             <p className="text-slate-300 mb-8 max-w-2xl">
-              A collection of systems-level software, distributed applications, and experimental research projects focused on high-performance computing.
+              Yüksek performanslı bilişime odaklanmış sistem seviyesi yazılım, dağıtık uygulamalar ve deneysel araştırma projelerinin koleksiyonu.
             </p>
             
             {/* Filter Tags */}
             <div className="flex flex-wrap gap-2">
-              <span className="px-4 py-2 bg-violet-900/50 text-violet-300 rounded-full text-sm border border-violet-700">all_projects</span>
-              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">mobile_dev</span>
-              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">backend_dev</span>
-              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">research</span>
+              <span className="px-4 py-2 bg-violet-900/50 text-violet-300 rounded-full text-sm border border-violet-700">tumProje</span>
+              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">mobilGelis</span>
+              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">backendGelis</span>
+              <span className="px-4 py-2 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-violet-500 transition cursor-pointer">arastirma</span>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export default function Projeler() {
                       <> GitHub
                     </a>
                     <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1 text-center text-slate-400 hover:text-violet-400 text-sm font-mono">
-                      Live Demo 
+                      Canlı Demo 
                     </a>
                   </div>
                 </div>
@@ -111,25 +111,25 @@ export default function Projeler() {
 
           {/* Research & Recognition */}
           <section className="mb-20">
-            <h2 className="text-3xl font-bold text-white mb-8">Research & Recognition</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">Araştırma & Tanınma</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border-l-4 border-cyan-500 pl-6 py-6 bg-slate-800/30 rounded-r-lg p-6">
                 <div className="text-sm text-slate-500 mb-2">2023</div>
-                <h3 className="font-bold text-white text-lg mb-2">Latency Optimization in P2P Networks</h3>
+                <h3 className="font-bold text-white text-lg mb-2">P2P Ağlarında Gecikme Optimizasyonu</h3>
                 <p className="text-slate-400 text-sm mb-4">
-                  Undergraduate research thesis analyzing novel routing protocols for decentralized file-sharing systems. Published in the Journal of Computer Science.
+                  Merkezi olmayan dosya paylaşım sistemleri için yeni yönlendirme protokollerini analiz eden lisans üstü araştırma tezi. Bilgisayar Bilimleri Dergisinde yayınlandı.
                 </p>
-                <a href="#" className="text-cyan-400 text-xs font-mono hover:text-cyan-300">READ PAPER →</a>
+                <a href="#" className="text-cyan-400 text-xs font-mono hover:text-cyan-300">MAKALEYİ OKU →</a>
               </div>
 
               <div className="border-l-4 border-cyan-500 pl-6 py-6 bg-slate-800/30 rounded-r-lg p-6">
                 <div className="text-sm text-slate-500 mb-2">2024</div>
-                <h3 className="font-bold text-white text-lg mb-2">Global Tech-Hack Runner Up</h3>
+                <h3 className="font-bold text-white text-lg mb-2">Global Tech-Hack İkincilik</h3>
                 <p className="text-slate-400 text-sm mb-4">
-                  Developed EcoChain, a blockchain-based carbon credit tracking system for local municipalities. Completed in 48 hours during international competition.
+                  Yerel belediyeler için blokzincir tabanlı karbon kredi izleme sistemi EcoChain geliştirdim. Uluslararası yarışmada 48 saat içinde tamamlandı.
                 </p>
-                <a href="#" className="text-cyan-400 text-xs font-mono hover:text-cyan-300">PROJECT DECK →</a>
+                <a href="#" className="text-cyan-400 text-xs font-mono hover:text-cyan-300">PROJE SUNUMU →</a>
               </div>
             </div>
           </section>
