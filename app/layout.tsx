@@ -4,8 +4,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Saliha Karaman - Portfolio',
-  description: 'Kişisel portföy sitesi',
+  title: 'Saliha Karaman - DEV_PORTFOLIO',
+  description: 'Computer Science student focused on engineering reliable digital systems',
+  icons: {
+    icon: '◆',
+  },
 }
 
 export default function RootLayout({
@@ -14,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="tr">
+    <html lang="en">
       <head />
-      <body className="bg-gray-50 text-gray-900">
-        <Header />
-        {children}
-        <Footer />
+      <body className="bg-slate-950 text-slate-100 antialiased">
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
