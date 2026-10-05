@@ -7,7 +7,8 @@ import {
   useState,
   type ReactNode,
 } from 'react';
-import { defaultLocale, dict, loc, lookup, type Locale, type TranslationKey } from '@/lib/i18n';
+import { defaultLocale, loc, lookup, type TranslationKey } from '@/lib/i18n';
+import type { Locale } from '@/types';
 
 type LanguageContextValue = {
   locale: Locale;

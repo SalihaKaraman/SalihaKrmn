@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowUpRight, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Mail, Download } from 'lucide-react';
 import ProjectCard from '@/components/ProjectCard';
 import BlogCard from '@/components/BlogCard';
 import { personalInfo } from '@/data';
@@ -65,7 +65,7 @@ export default function HomeView({ featuredProjects, recentPosts }: HomeViewProp
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
-              <Github size={14} />
+              <ExternalLink size={14} />
               GitHub
             </Link>
           )}
@@ -77,7 +77,7 @@ export default function HomeView({ featuredProjects, recentPosts }: HomeViewProp
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
-              <Linkedin size={14} />
+              <ExternalLink size={14} />
               LinkedIn
             </Link>
           )}

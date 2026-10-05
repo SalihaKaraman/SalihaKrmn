@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { ExternalLink, Mail } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 
 export default function Footer() {
@@ -49,7 +49,7 @@ export default function Footer() {
               aria-label="GitHub"
               className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
-              <Github size={16} />
+              <ExternalLink size={16} />
             </Link>
             <Link
               href="https://linkedin.com/in/tnc4y"
@@ -58,7 +58,7 @@ export default function Footer() {
               aria-label="LinkedIn"
               className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
-              <Linkedin size={16} />
+              <ExternalLink size={16} />
             </Link>
             <Link
               href="mailto:hi@saliha.me"
