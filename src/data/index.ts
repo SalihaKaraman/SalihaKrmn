@@ -2,47 +2,57 @@ import { PersonalInfo, Project, Experience, Education } from '@/types';
 
 export const personalInfo: PersonalInfo = {
   name: "Saliha Karaman",
-  profileImage: "/profile.jpeg", // Kendi fotoğraf yolunu buraya ekleyebilirsin
+  profileImage: "",
   title: {
     tr: "Matematik Öğretmeni & Bilgisayar Bilimleri Öğrencisi",
     en: "Mathematics Teacher & Computer Science Student",
   },
-  email: "salihakaraman33@gmail.com", // Kendi e-posta adresinle güncelleyebilirsin
+  email: "salihakaraman33@gmail.com",
   location: {
     tr: "Adana, Türkiye",
-    en: "Adana, Türkiye",
+    en: "Adana, Turkey",
   },
   bio: {
-    tr: "Matematik öğretimi ve eğitim teknolojilerini birleştiriyorum. Konunun mantığını kavratan adım adım çözümler üretmeye ve EdTech alanında yazılım çözümleri geliştirmeye odaklıyım.",
-    en: "Merging mathematics education with EdTech. Focused on creating step-by-step solutions that teach the underlying logic and developing software for the educational sector.",
+    tr: "Matematik eğitimi, eğitim teknolojileri ve bilgisayar bilimlerini birleştiriyorum. Öğrenci aidiyeti, erişilebilirlik ve analitik düşünmeyi merkeze alan çözümler üretmeye odaklanıyorum.",
+    en: "I combine mathematics education, educational technology, and computer science. I focus on solutions centered on student belonging, accessibility, and analytical thinking.",
   },
   socialLinks: {
-    github: "https://github.com/salihakaraman", // Profil linklerini güncelleyebilirsin
+    github: "https://github.com/salihakaraman",
     linkedin: "https://linkedin.com/in/salihakaraman",
-    website: "https://salihakaraman.dev"
+    website: "https://saliha.me"
   }
 };
 
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Yükseköğretim ve Taşımalı Eğitim Analizi",
+    title: "Okul Aidiyeti, Yaşam Kalitesi ve Okul Terk Riski",
     description: {
-      tr: "Taşımalı eğitim gören lise öğrencilerinin okul aidiyeti, yaşam kalitesi algısı ve okul terk riski üzerine kapsamlı akademik araştırma ve istatistiksel analiz.",
-      en: "Comprehensive academic research and statistical analysis on school belonging, quality of life perception, and dropout risks among high school students in transported education.",
+      tr: "Taşımalı eğitim gören lise öğrencilerinin okul aidiyeti, yaşam kalitesi algısı ve okul terk riski üzerine kapsamlı araştırma ve istatistiksel değerlendirme.",
+      en: "Comprehensive research and statistical evaluation on school belonging, quality-of-life perception, and dropout risk among high school students in transported education.",
     },
     technologies: ["SPSS", "Veri Analizi", "Akademik Araştırma"],
     featured: true
   },
   {
     id: "2",
-    title: "Mobile App Development Workshop",
+    title: "Mobil Uygulama Geliştirme Atölyesi",
     description: {
-      tr: "Flutter ve Firebase kullanarak 60 saatlik yoğun bir eğitim kapsamında geliştirilen mobil uygulama projeleri.",
-      en: "Mobile application projects developed during an intensive 60-hour workshop using Flutter and Firebase.",
+      tr: "Flutter, Dart ve Firebase kullanarak 60 saatlik atölye kapsamında geliştirilen mobil uygulama deneyimi ve uygulama mimarisi çalışmaları.",
+      en: "Mobile application experience and architecture work developed during a 60-hour workshop using Flutter, Dart, and Firebase.",
     },
     technologies: ["Flutter", "Firebase", "Dart"],
     featured: true
+  },
+  {
+    id: "3",
+    title: "Dijital Eğitim ve Yapay Zeka Okuryazarlığı",
+    description: {
+      tr: "Yapay zeka araçlarının eğitimde kullanımı, etik duyarlılık ve teknoloji okuryazarlığı üzerine farkındalık ve gelişim programları.",
+      en: "Awareness and development programs on AI tools in education, ethical awareness, and technology literacy.",
+    },
+    technologies: ["AI", "Eğitim Teknolojileri", "Dijital Okuryazarlık"],
+    featured: false
   }
 ];
 
@@ -54,13 +64,14 @@ export const experiences: Experience[] = [
       tr: "Gönüllü Matematik Öğretmeni",
       en: "Volunteer Mathematics Teacher",
     },
-    startDate: "2023-01",
+    startDate: "2020-10",
+    endDate: "2021-01",
     description: {
-      tr: "Görme engelli öğrenciler için matematik ders içeriklerinin uyarlanması ve gönüllü eğitmenlik desteği.",
-      en: "Adapted mathematics curriculum for visually impaired students and provided volunteer teaching support.",
+      tr: "Görme engelli öğrenciler için matematik ders içeriklerinin uyarlanması ve bireysel destek sağlanması.",
+      en: "Adapted mathematics learning content for visually impaired students and provided individualized educational support.",
     },
     technologies: ["Eğitim Teknolojileri", "Erişilebilirlik"],
-    location: "Ankara, Türkiye"
+    location: "Kurtuluş, Ankara"
   },
   {
     id: "2",
@@ -71,8 +82,8 @@ export const experiences: Experience[] = [
     },
     startDate: "2025-09",
     description: {
-      tr: "Yapay zeka çağında liderlik ve gelişen dünyada kariyer farkındalığı üzerine profesyonel gelişim programları.",
-      en: "Professional development programs on leadership in the AI age and career awareness in a developing world.",
+      tr: "Yapay zeka çağında liderlik, profesyonel iletişim ve kariyer farkındalığı üzerine eğitimlere katılım.",
+      en: "Participation in training on leadership in the AI era, professional communication, and career awareness.",
     },
     technologies: ["AI", "Liderlik", "Kariyer Planlama"],
     location: "Online"
